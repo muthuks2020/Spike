@@ -1,0 +1,33 @@
+{
+  "name": "spike-contentful",
+  "description": "a demo of  spike-contentful",
+    "ava": {
+    "verbose": "true"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.1.8",
+    "image-webpack-loader": "^3.1.0",
+    "marked": "^0.3.6",
+    "reshape-standard": "^1.0.0",
+    "spike": "^1.0.0",
+    "spike-contentful": "^1.0.0",
+    "spike-css-standards": "^1.0.0",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "rimraf": "^2.5.4",
+    "snazzy": "^6.0.0",
+    "spike-core": "next",
+    "standard": "^8.6.0"
+  },
+
+  "main": "app.js",
+  "private": true,
+    "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
+  }
+}
